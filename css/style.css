@@ -268,9 +268,11 @@ footer{
     padding: 0px;
 }
 
+
+
 .skills h1{
     grid-column: 1/13;
-    width: 393px;
+    width: 100%;
     background: #E9A72B;
     font-family: 'DINPro-Medium'; 
     font-size: 0.8em; 
@@ -292,7 +294,34 @@ footer{
      grid-column: 5;
 }
 
+.SignIn{
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2px;
 
+}
+
+.SignIn h3 a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'DINPro-Light';
+    margin-left: 10px;
+}
+
+.SignInBtn{
+    background:#E9A72B;
+    width: 4em;
+    padding: 0.5em;
+    font-size: 0.7em;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'DINPro-Medium';
+    margin-left: 143px;
+
+
+}
 
 footer {
     position: fixed;
