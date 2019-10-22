@@ -110,9 +110,14 @@ footer{
 .wrapper{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 5px;
+    grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     background: #E3E6F7;
+}
+
+.logedInCards{
+    grid-column: 1/12;
+    background: #D5ECF4;
 }
 
 .card1{
@@ -319,9 +324,9 @@ footer{
     text-decoration: none;
     font-family: 'DINPro-Medium';
     margin-left: 143px;
-
-
 }
+
+
 
 footer {
     position: fixed;
