@@ -109,10 +109,12 @@ footer{
 /*Card styling*/
 .wrapper{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     background: #E3E6F7;
+    margin: 1.5em;
+    width: 100%;
 }
 
 .logedInCards{
@@ -132,10 +134,10 @@ footer{
 }
 
 
-.card2{
-    grid-column: 2/4;
+.card{
+    grid-column: 2;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-columns: repeat(12, 1fr); */
     grid-gap: 6px;
     background: #E9A72B;
     width: 577px;
