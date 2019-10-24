@@ -118,8 +118,9 @@ footer{
 }
 
 .logedInCards{
-    grid-column: 1/12;
+    grid-column: 3;
     background: #D5ECF4;
+    width: 100%;
 }
 
 .card1{
