@@ -1,0 +1,339 @@
+body{
+    background-color: #E3E6F7;
+}
+
+@font-face{
+    font-family: 'DINPro-Regular';
+    src: URL(/Fonts/DINPro-Regular.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'DINPro-Bold';
+    src: URL(/Fonts/DINPro-Bold.ttf) format('truetype');
+    font-style: bold;
+}
+
+@font-face{
+    font-family: 'DINPro-Medium';
+    src: URL(/Fonts/DINPro-Medium.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'DINPro-Light';
+    src: URL(/Fonts/DINPro-Light.ttf) format('truetype');
+    font-style: initial;
+}
+/* 
+Grid styling
+*/
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+header{
+    grid-column: 1/13;
+}
+
+.headerArea{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "logo logo logo copLogo";
+    background-color: #E9A72B;
+    width: 100%;
+    /* height: 100px; */
+    padding: 10px;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.copLogo img{
+    grid-area: copLogo;
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 70px;
+    box-shadow: 0px 2px 4px;
+}
+
+
+
+footer{
+    grid-column: 1/13;
+}
+
+.logo{
+    width: 240px;
+    padding: 6px;
+}
+
+.logo > h3{
+    background: #E3E6F7;
+    width: 170px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    padding: 5px;
+    font-family: 'DINPro-Regular';
+        /*Tilt*/
+        -ms-transform: rotate(-2deg); /* IE 9 */
+        -webkit-transform: rotate(-2deg); /* Safari */
+        transform: rotate(-2deg);
+    border: 1px solid #707070;
+    box-shadow: 4px 3px #707070 ;
+}
+
+.logo > h1{
+    background: #E3E6F7;
+    font-size: 1.5em;
+    padding: 5px;
+    font-family: 'DINPro-Bold';
+        /*Tilt*/
+        -ms-transform: rotate(1deg); /* IE 9 */
+        -webkit-transform: rotate(1deg); /* Safari */
+        transform: rotate(1deg);
+    border: 1.5px solid #707070;
+    box-shadow: 3px 4px #707070; 
+}
+
+
+/*Card styling*/
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background: #E3E6F7;
+    margin: 1.5em;
+    width: 100%;
+}
+
+.logedInCards{
+    grid-column: 3;
+    background: #D5ECF4;
+    width: 100%;
+}
+
+.card1{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 6px;
+    background: #E9A72B;
+    width: 577px;
+    height: 246px;
+    border: 3px solid #0055A7; 
+}
+
+
+.card{
+    grid-column: 2;
+    display: grid;
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-gap: 6px;
+    background: #E9A72B;
+    width: 577px;
+    height: 246px;
+    border: 3px solid #0055A7; 
+}
+
+
+.proPic{
+    grid-column: 1/auto;
+}
+
+.proPic img{
+    width:148px ;
+    height: auto;
+    margin: 6px;
+}
+
+.proPic h1{
+    font-family: 'DINPro-Medium';
+    font-size: 1em;
+    text-align: center;
+    background: #E3E6F7;
+    padding: 3px;
+    margin-top: 3px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.memberDetailsBG{
+    grid-column: 2;
+    background: #0055A7;
+    width: 413px;
+    height: 247px;
+    float: right;
+    
+}
+
+.memberDetails{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 6px;
+    background: #a9b1d5;
+    border-radius: 10px 10px 0px 0px;
+    margin: 7px;
+}
+
+.memberDetails h1{
+    grid-column: 1/13;
+    font-family: 'DINPro-Medium';
+    font-size: 1.7em;
+    margin: 2px 0px 0px 6px;
+}
+.memberDetails h3{
+    grid-column: 1/13;
+    font-family: 'DINPro-Bold';
+    font-size: 1em;
+    margin: 0px 0px 6px 6px;;   
+}
+
+.grade{
+    grid-column: 1/4;
+    grid-row: 3;
+    background: #E3E6F7;
+    width: 100px;
+    height: 16px;
+    font-family: 'DINPro-Medium';
+    text-align: center;
+    font-size: 0.8em;
+    padding: 3px;
+    margin: 0px 0px 6px 6px;
+}
+#grade{
+    font-family: 'DINPro-Light';
+}
+
+.age{
+    grid-column: 5/7;
+    grid-row: 3;
+    background: #E3E6F7;
+    width: 100px;
+    height: 16px;
+    font-family: 'DINPro-Medium';
+    text-align: center;
+    font-size: 0.8em;
+    padding: 3px;
+    margin: 0px 0px 6px 0px;
+}
+#age{
+    font-family: 'DINPro-Light';
+}
+
+.gender{
+    grid-column: 9/13;
+    grid-row: 3;
+    background: #E3E6F7;
+    width: 100px;
+    height: 16px;
+    font-family: 'DINPro-Medium';
+    text-align: center;
+    font-size: 0.8em;
+    padding: 3px;
+    margin: 0px 0px 6px 0px;
+}
+#gender{
+    font-family: 'DINPro-Light';
+}
+
+.school{
+    grid-column: 1/13;
+    grid-row: 4;
+    background: #E3E6F7;
+    width: auto;
+    height: 16px;
+    font-family: 'DINPro-Medium';
+    font-size: 0.75em;
+    text-align: left;
+    padding: 3px;
+    margin: 0px 6px 6px 6px;
+}
+#school{
+    font-family: 'DINPro-Light';
+}
+
+.skills{
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-row: 5;
+    width: auto;
+    height: 80px;
+    background: #707070;
+    padding: 0px;
+}
+
+
+
+.skills h1{
+    grid-column: 1/13;
+    width: 100%;
+    background: #E9A72B;
+    font-family: 'DINPro-Medium'; 
+    font-size: 0.8em; 
+    text-align: center;
+    padding: 2px;
+    margin: 0 auto;
+}
+
+
+.goldBadge{
+     grid-column: 1;
+}
+
+.silverBadge{
+    grid-column: 3 ;
+}
+
+.bronzeBadge{
+     grid-column: 5;
+}
+
+.SignIn{
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2px;
+
+}
+
+.SignIn h3 a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'DINPro-Light';
+    margin-left: 10px;
+}
+
+.SignInBtn{
+    background:#E9A72B;
+    width: 4em;
+    padding: 0.5em;
+    font-size: 0.7em;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'DINPro-Medium';
+    margin-left: 143px;
+}
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
